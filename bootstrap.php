@@ -26,7 +26,8 @@ define('WPMPW_MIN_PHP_VERSION', '8.1');
 define('WPMPW_MIN_WP_VERSION', '5.8');
 
 define('WPMPW_PATH', plugin_dir_path(__FILE__));
-define('WPMPW_BASEDIR', dirname(plugin_basename(__FILE__)));
+define('WPMPW_BASENAME', plugin_basename(__FILE__));
+define('WPMPW_BASEDIR', dirname(WPMPW_BASENAME));
 define('WPMPW_ROOT', str_replace(ABSPATH, '/', WPMPW_PATH));
 define('WPMPW_URI', home_url(WPMPW_ROOT));
 

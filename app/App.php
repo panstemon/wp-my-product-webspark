@@ -24,6 +24,7 @@ class App
 
         $this->requirementsChecker = Hooks::init(new RequirementsChecker());
         if (!$this->requirementsChecker()->check()) {
+            $this->destroy();
             return;
         }
 
@@ -65,6 +66,13 @@ class App
     public function __wakeup(): never
     {
         throw new \Exception('Cannot unserialize a singleton.');
+    }
+
+    private function destroy(): void {
+        if (!function_exists('deactivate_plugins')) {
+            require_once ABSPATH . 'wp-admin/includes/plugin.php';
+        }
+        deactivate_plugins(WPMPW_BASENAME);
     }
 
     public static function get(): App
