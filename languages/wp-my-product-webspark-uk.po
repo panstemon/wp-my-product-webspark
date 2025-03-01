@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP My Product Webspark\n"
 "POT-Creation-Date: 2025-03-01 05:10+0200\n"
-"PO-Revision-Date: 2025-03-01 05:10+0200\n"
+"PO-Revision-Date: 2025-03-01 05:41+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uk\n"
@@ -37,8 +37,7 @@ msgstr ""
 #: app/Core/RequirementsChecker.php:93
 #, php-format
 msgid "%s requires %s plugin to be installed and active."
-msgstr ""
-"WPMyProductWebspark потребує, аби плагін %s був встановлений і активований."
+msgstr "%s потребує, аби плагін %s був встановлений і активований."
 
 #: app/Integrations/Woocommerce/Emails/NewOrUpdatedProductAdminEmail.php:10
 msgid "New/Updated Product (Custom)"
